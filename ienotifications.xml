@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tile>
+  <visual lang="en-US" version="2">
+    <binding template="TileSquare150x150PeekImageAndText02" fallback="TileSquarePeekImageAndText02">
+      <image id="1" src="/images/msapptile/smalltile.png" alt="Alessandro Menti &ndash; Website logo" />
+      <text id="1">{{ site.posts.last.title | xml_escape }}</text>
+      <text id="2">{{ site.posts.last.excerpt | strip_html | xml_escape }}</text>
+    </binding>
+    <binding template="TileWide310x150SmallImageAndText04" fallback="TileWideSmallImageAndText04">
+      <image id="1" src="/images/msapptile/widetile.png" alt="Alessandro Menti &ndash; Website logo" />
+      <text id="1">{{ site.posts.last.title | xml_escape }}</text>
+      <text id="2">{{ site.posts.last.excerpt | strip_html | xml_escape }}</text>
+    </binding>
+    <binding template="TileSquare310x310ImageAndTextOverlay02">
+      <image id="1" src="/images/msapptile/largetile.png" alt="Alessandro Menti &ndash; Website logo" />
+      <text id="1">{{ site.posts.last.title | xml_escape }}</text>
+      <text id="2">{{ site.posts.last.excerpt | strip_html | xml_escape }}</text>
+    </binding>
+  </visual>
+</tile>

@@ -1,0 +1,252 @@
+---
+---
+
+@charset 'utf-8';
+
+@import "bootstrap-theme";
+
+/* Utopia and Oxygen Mono fonts */
+@font-face {
+    font-family: "Utopia";
+    font-style: normal;
+    font-weight: normal;
+    src: local(Utopia), url("/fonts/utopia-regular-latin.woff2") format(woff2), url("/fonts/utopia-regular-latin.woff") format(woff), url("/fonts/utopia-regular-latin.ttf") format(ttf), url("/fonts/utopia-regular-latin.eot") format(eot);
+}
+
+@font-face {
+    font-family: "Utopia";
+    font-style: italic;
+    font-weight: normal;
+    src: local(Utopia Italic), url("/fonts/utopia-italic-latin.woff2") format(woff2), url("/fonts/utopia-italic-latin.woff") format(woff), url("/fonts/utopia-italic-latin.ttf") format(ttf), url("/fonts/utopia-italic-latin.eot") format(eot);
+}
+
+@font-face {
+    font-family: "Utopia";
+    font-style: normal;
+    font-weight: bold;
+    src: local(Utopia Bold), url("/fonts/utopia-bold-latin.woff2") format(woff2), url("/fonts/utopia-bold-latin.woff") format(woff), url("/fonts/utopia-bold-latin.ttf") format(ttf), url("/fonts/utopia-bold-latin.eot") format(eot);
+}
+
+@font-face {
+    font-family: "Utopia";
+    font-style: italic;
+    font-weight: bold;
+    src: local(Utopia Bold Italic), url("/fonts/utopia-bold-italic-latin.woff2") format(woff2), url("/fonts/utopia-bold-italic-latin.woff") format(woff), url("/fonts/utopia-bold-italic-latin.ttf") format(ttf), url("/fonts/utopia-bold-italic-latin.eot") format(eot);
+}
+
+@font-face {
+    font-family: "Oxygen Mono";
+    font-style: normal;
+    font-weight: normal;
+    src: local(Oxygen Mono), url("/fonts/oxygen-mono-regular-latin.woff2") format(woff2), url("/fonts/oxygen-mono-regular-latin.woff") format(woff), url("/fonts/oxygen-mono-regular-latin.ttf") format(ttf), url("/fonts/oxygen-mono-regular-latin.eot") format(eot);
+}
+
+/* Syntax highlighting from <https://github.com/jwarby/jekyll-pygments-themes/blob/master/vs.css> */
+.highlight {
+    .hll {
+        background-color: #ffffcc;
+    }
+
+    .c { /* Comment */
+        color: #008000;
+    }
+
+    .err { /* Error */
+        border: 1px solid #FF0000;
+    }
+
+    .k { /* Keyword */
+        color: #0000ff;
+    }
+
+    .cm { /* Comment.Multiline */
+        color: #008000;
+    }
+
+    .cp { /* Comment.Preproc */
+        color: #0000ff;
+    }
+
+    .c1 { /* Comment.Single */
+        color: #008000;
+    }
+
+    .cs { /* Comment.Special */
+        color: #008000;
+    }
+
+    .ge { /* Generic.Emph */
+        font-style: italic;
+    }
+
+    .gh { /* Generic.Heading */
+        font-weight: bold;
+    }
+
+    .gp { /* Generic.Prompt */
+        font-weight: bold;
+    }
+
+    .gs { /* Generic.Strong */
+        font-weight: bold;
+    }
+
+    .gu { /* Generic.Subheading */
+        font-weight: bold;
+    }
+
+    .kc { /* Keyword.Constant */
+        color: #0000ff;
+    }
+
+    .kd { /* Keyword.Declaration */
+        color: #0000ff;
+    }
+
+    .kn { /* Keyword.Namespace */
+        color: #0000ff;
+    }
+
+    .kp { /* Keyword.Pseudo */
+        color: #0000ff;
+    }
+
+    .kr { /* Keyword.Reserved */
+        color: #0000ff;
+    }
+
+    .kt { /* Keyword.Type */
+        color: #2b91af;
+    }
+
+    .s { /* Literal.String */
+        color: #a31515;
+    }
+
+    .nc { /* Name.Class */
+        color: #2b91af;
+    }
+
+    .ow { /* Operator.Word */
+        color: #0000ff;
+    }
+
+    .sb { /* Literal.String.Backtick */
+        color: #a31515;
+    }
+
+    .sc { /* Literal.String.Char */
+        color: #a31515;
+    }
+
+    .sd { /* Literal.String.Doc */
+        color: #a31515;
+    }
+
+    .s2 { /* Literal.String.Double */
+        color: #a31515;
+    }
+
+    .se { /* Literal.String.Escape */
+        color: #a31515;
+    }
+
+    .sh { /* Literal.String.Heredoc */
+        color: #a31515;
+    }
+
+    .si { /* Literal.String.Interpol */
+        color: #a31515;
+    }
+
+    .sx { /* Literal.String.Other */
+        color: #a31515;
+    }
+
+    .sr { /* Literal.String.Regex */
+        color: #a31515;
+    }
+
+    .s1 { /* Literal.String.Single */
+        color: #a31515;
+    }
+
+    .ss { /* Literal.String.Symbol */
+        color: #a31515;
+    }
+}
+
+/* Own styles. */
+body {
+    padding-top: 88px;
+    font-family: "Utopia", serif !important;
+}
+
+code, kbd, pre, samp {
+    font-family: "Oxygen Mono", monospace !important;
+}
+
+/* Navbar styles. */
+#sitelogo {
+    float: left !important;
+    margin-right: 1em;
+    padding-top: 2px;
+}
+
+.navbar {
+    min-height: 68px !important;
+}
+
+.navbar-brand {
+    height: 68px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.navbar-nav {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    @media (min-width: 768px) {
+        > li {
+            > a {
+                padding-top: 24px;
+                padding-bottom: 24px;
+            }
+        }
+    }
+}
+
+/* Footer styles. */
+.site-footer {
+    border-top: 1px solid #000000;
+    padding-top: .5em;
+}
+
+/* Social media/collaboration accounts. */
+.accsprite {
+    background: url("/images/accounts.png") no-repeat top left;
+    padding-left: 20px;
+}
+.accsprite-github {
+    background-position: 0 0;
+}
+.accsprite-twitter {
+    background-position: 0 -16px;
+}
+.accsprite-linkedin {
+    background-position: 0 -32px;
+}
+
+/* Post header. */
+.post-header {
+    padding-bottom: 1em;
+}
+
+/* Post list. */
+.post-list {
+    margin-left: 0;
+    list-style: none;
+    > li {
+        margin-bottom: 30px;
+    }
+}

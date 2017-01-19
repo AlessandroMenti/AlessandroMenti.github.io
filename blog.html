@@ -1,0 +1,23 @@
+---
+layout: default
+title: Blog archive
+permalink: /blog/
+---
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <header class="post-header">
+        <h1 class="post-title">All blog posts</h1>
+      </header>
+      <ul class="posts list-unstyled">
+        {% for post in site.posts %}
+          <li>
+            <h2><small class="post-date">{{ post.date | date: "%b %-d, %Y" }}</small><br>
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+            {{ post.excerpt | remove: '</p>' }} <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">Read more&nbsp;→</a></p>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>

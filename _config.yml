@@ -1,0 +1,33 @@
+title: Alessandro Menti's website
+email: alessandro.menti@alessandromenti.it
+description: Putting theory into practice and vice versa
+baseurl: ""
+url: "https://www.alessandromenti.it"
+twitter:
+  username: AlessMenti
+github:
+  username: AlessandroMenti
+linkedin:
+  username: AlessandroMenti
+
+timezone: Europe/Rome
+permalink: /blog/:year/:month/:title.html
+author:
+  name: "Alessandro Menti"
+  twitter: AlessMenti
+  github: AlessandroMenti
+
+# Build settings
+markdown: kramdown
+theme: minima
+gems:
+  - jekyll-feed
+exclude:
+  - Gemfile
+  - Gemfile.lock
+sass:
+  sass_dir: _sass
+  style: compressed
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
