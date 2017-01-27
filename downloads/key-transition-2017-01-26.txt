@@ -1,0 +1,81 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+OpenPGP key transition statement for Alessandro Menti
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In order to migrate to a more secure setup (where my OpenPGP master key is split
+and stored separately from my everyday signing/authentication/encryption keys)
+I have generated a new key and am transitioning away from my old one.
+
+The old key, which has not been compromised, will expire on January 28th, 2017.
+All signatures from now on will be performed exclusively with my new key.
+
+This message is signed by both keys to certify the transition; additionally,
+the new key will be signed by the old one.
+
+The old key, which I am transitioning away from, is:
+
+pub   rsa4096/0x8CEFF2C1E97587C2 2011-06-30 [SC] [expires: 2017-01-28]
+      Key fingerprint = 95B6 E1C2 099E DC88 4C99  8360 8CEF F2C1 E975 87C2
+
+The new key, to which I am transitioning, is:
+
+pub   rsa4096/0xBF334213F5C5CA03 2017-01-22 [SC] [expires: 2018-01-22]
+      Key fingerprint = 6731 DDC2 8357 BEC3 8E34  2AAF BF33 4213 F5C5 CA03
+
+Note that the new key is currently set to expire on January 22nd, 2018, as a
+"dead man's switch" in case I lose access to my private key (and to force all
+recipients to refresh it from a keyserver). Its validity will be extended
+periodically.
+
+My new key can be downloaded from <https://www.alessandromenti.it/downloads/
+pubkey-0xBF334213F5C5CA03.asc>. You can also get it from the sks-keyservers.net
+keyservers pool:
+
+    curl https://sks-keyservers.net/sks-keyservers.netCA.pem \
+        > /tmp/sks-keyservers.netCA.pem
+    gpg --keyserver hkps://hkps.pool.sks-keyservers.net \
+        --hkp-cacert /tmp/sks-keyservers.netCA.pem \
+        --recv-key 0xBF334213F5C5CA03
+
+Make sure to compare the fingerprint with the one published above or, if you
+already have my old key, verify that the new one is signed by the old one:
+
+    gpg --check-sigs 0xBF334213F5C5CA03
+
+The authenticity of this statement can be checked with the following command:
+
+    cat key-transition-2017-01-26.txt | gpg --verify
+
+Should you have any questions, feel free to contact me at
+<alessandro.menti@alessandromenti.it>.
+
+Alessandro Menti
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCgAdFiEElbbhwgme3IhMmYNgjO/ywel1h8IFAliKfZgACgkQjO/ywel1
+h8KvEQ//Ricrx5xXDfIO0aHsq9K2B5kAJVoPpflAq3EZuyI/Ud7ApPEbjH2MyfGW
+NjTMWi34meCRxnPuSxlXeMo4eBRHYbSnrZp9I2osreW06WG4YfoiX4ATGHloGMDr
+if+QHelxShQyhTrt84XBazO2koLhmnfvqObVZc+PGCMEB2UaVuYu0rvZ2kBAX1Iu
+Kr+/ywsC/VLemyA7EaZXeipqzSLoReKvcegKU8GQ9vHuzP4XYQLSSXZbPH6nX3ip
+8v6VcWS0jDRkhUe4XWBO5VIdGRPYJuGOTnlQdwAOrIyRhvfwQz68gOZqSf5CIYUc
+7rYXC1XK7opDiTTWF51s66Sh+m4iO1VgxXmcKe2tzLlRKYMSiK6Rmx3WUHVIiCeP
+5reRiQhRjHlEEPLn+F0aiIRn83aE+BLtyF5Gw7ysU+s4XqesC/BoUPQu2j4z9obZ
+aNVpUcFsHfpvEGDyFc/B/IOg9EvDocxqcuDr0F6FdgapE7jPUVy1a3JKlqekBs7T
+ULlPkrfE9DUBN6eHFnJe0ZAgDSZsd14DHIpZSMfqxuJeZG2yAhz264rJGdr8yJ9T
+ypWQysIxp2HNkOt1W5KoPGWelmGRsgxInJoskZJ11kp/PttAZh3jotbg1yS291g5
+QOSr5KgdSVN3cAPE3SNgQt0Z/VcjXyakvP1uMUcjXSe4rhVsc/qJAjMEAQEKAB0W
+IQS68gojWDyEmwNN1IRGesC01qbzNgUCWIp9ngAKCRBGesC01qbzNtawD/0Qc0Tj
+Waqg7zT944vCiRNM1uEFlUOq+DM4L6Ri0eJWA3zwKXkl1StbO+TFZhT/6gHVuPnQ
+NOAbWsHR2aft4wdNp8of0HeRQ7OlwnKYfajxSYq+Uz+hzr8BqZWrji74QzGnvlub
+wGcPfAHNjbPq18Nf3zy5HI0r2Q4nsegAcub+LYfDau14gkJ2mVuE0/VFIfxzk79F
+G+LFQcTXts+P34ERkbMH2/bDTYjUe78dEYHZKpMefYralVO23UjbIKVjmr/mEdiu
+Fx03tfckkOLXz4E9VdGWLsA1eSiij+ueR0rHWr17FFPPR/pqNb2241XO8r/gN2nF
+Tx1s7UNjX5MBk7L2JHNL/Sr0dXEKgWAypMBMTkK1/4gW4S6YKzOGhT+vs2XD0rpo
+aWjwZ4nUIZ7fV5d2gC2S83xVoSJogI4+ssluLtVp94cFvKPPqpdYfXd87jexqmyc
+GIwpb3L5pZIc1zRHXPxTA4o1I2c6wqm5/j5n2nSDqQqiKibJ0ECFl24WJ7VgyCIK
+E2n3QJCkB/SoTA5FEDascELnW3oJZUQ69KC0CPN3SItItslF4OR81mQSbIHYw44o
+ari83aGX8J8/FN/rszW452jGW35wxv1TYO4+ZSyoeqF7q2WtyOafnhmhvpd1vq8c
+MYEmUR2aMS8O2og4xWXDMBLJlJfCcHS5fvRBbQ==
+=BPzA
+-----END PGP SIGNATURE-----
