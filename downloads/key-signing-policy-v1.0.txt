@@ -1,0 +1,146 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+OpenPGP keysigning policy for Alessandro Menti (v1.0)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+This policy is signed using GPG. To verify its authenticity, run the following
+commands:
+
+    $ gpg --recv-keys 0xBF334213F5C5CA03
+    $ curl https://www.alessandromenti.it/downloads/key-signing-policy-v1.0 | gpg --verify -
+
+0.0 Preamble
+- ------------
+This key signing policy is applicable to key signing done with the following
+OpenPGP key:
+
+    rsa4096/0xBF334213F5C5CA03 2017-01-22
+    Key fingerprint = 6731 DDC2 8357 BEC3 8E34  2AAF BF33 4213 F5C5 CA03
+
+which can be downloaded from <https://www.alessandromenti.it/downloads/
+pubkey-0xBF334213F5C5CA03.asc> or from all major key servers.
+
+Any future version of this policy will supersede this one (the signatures that
+were already made before the update will, of course, continue to be governed by
+the versions in effect at the time they were made).
+
+1.0 Key signing conditions
+- --------------------------
+I only sign OpenPGP keys when I have personally met the person who claims to be
+the owner of said key. Thus, arranging a meet or attending a keysigning party
+where I am present is a requirement for the signee to get their key signed by
+me.
+
+In the case of automated, non-personal keys (for example, GPG keys used by
+build servers) or of keys belonging to an organization/team, I will need to
+meet at least one person that has demonstrably control over the key (that is,
+respectively, the machine/build server owner or a member of the organization/
+team to be certified).
+
+2.0 Signing levels
+- ------------------
+I sign keys with the follow certification levels:
+* 2 (casual verification): used for signing keys during keysigning parties or
+  in situations where careful checking was not possible.
+* 3 (extensive verification): used for signing:
+  a) keys verified after a one-on-one meeting;
+  b) automated keys for systems I control;
+  c) keys belonging to an organization/team I am a member of;
+  d) additional keys owned by me.
+
+For level 2 and for level 3, key type a), the owner of the key to be certified
+must produce at least one valid government-issued photo ID (preferably multiple
+ones).
+
+3.0 Meeting
+- -----------
+When meeting (either at a keysigning party or one on one), you will need to
+bring:
+* the output of `gpg --fingerprint`;
+* if the key to be certified includes photo UIDs and I do not know you
+  personally, a printout of the photos (in the case of keysigning parties,
+  if the key to be certified is made available to me prior to the event, I
+  can also print the photos myself);
+* at least one valid government-issued photo ID, preferably multiple ones.
+
+Whenever possible, the meeting should take place in a quiet setting and there
+should be enough time (at least 10/15 minutes) to allow the procedure to be
+completed without any rush.
+
+At the meeting, I will:
+* check the details and security features of your documents;
+* check that the photo on your documents matches your appearance (note that
+  the photo UID embedded in the key does not necessarily need to match the
+  one on your documents, although they must represent the same person);
+* note down your name, as written in your documents;
+* ask you to confirm the fingerprint of your GPG key and note it (or just take
+  the piece of paper where you noted the output of `gpg --fingerprint`);
+* take the printout of the photos (if that printout is required under this
+  policy).
+
+I will typically ask for a reciprocal key signing in return (as long as your
+key signing policy can be followed).
+
+4.0 Signing procedure
+- ---------------------
+After meeting in person, I will:
+* retrieve your public key from a public key server or a well-known public
+  location;
+* check that the fingerprint you confirmed at the meeting matches the one of
+  the public key.
+
+If those checks pass:
+* I will make a list of all UIDs carrying a name matching your name as listed
+  in the documents shown during the meetings (in some cases, minor variations
+  are accepted; I follow the CACert "Practice on Names" interpretation
+  <https://wiki.cacert.org/AssuranceHandbook2#PracticeOnNames.Practice_on_Names>
+  to determine whether a name variation is acceptable or not). If the UID has
+  a comment, it must not raise any doubts about the identity of the user,
+  meaning that I will independently verify any affiliation/nickname listed in
+  them;
+* if a UID carries an e-mail address, I will generate a random token, include
+  it in a message, encrypt it with the key to be certified, sign it with my own
+  key and send it. You will need to send me the random token back to confirm
+  that you have control over the address;
+* if a UID is a photo UID, I will check that the photo represents the same
+  person depicted in the printout.
+
+I will sign locally UIDs which pass all those checks, embedding a reference to
+this certification policy in my signature, and then send your signed public key
+to you via e-mail. Unless explicitly requested by you or by the rules of the
+attended keysigning party (if any), I will not publish my signature to a public
+key server; however, I reserve the right to do so (and to publish a signature
+revocation) in case I need to revoke my signature in the future.
+
+I reserve the right to not sign a key at my own discretion.
+
+Changelog
+- ---------
+29 June 2017, version 1.0: initial version
+
+Copyright and licensing
+- -----------------------
+This policy is copyrighted by Alessandro Menti, 2017.
+
+Structure and contents may be used under the conditions of the Creative Commons
+Attribution-Noncommercial-Share Alike 3.0 license.
+
+This policy was inspired by David Kaiser's PGP keysigning policy
+<http://dkaiser.org/pgp/keysigningpolicy.html>, which in turn takes inspiration
+from Ewald Tienkamp's policy <http://ewald.tienkamp.nl/>.
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCgAdFiEEuvIKI1g8hJsDTdSERnrAtNam8zYFAllVbjAACgkQRnrAtNam
+8zZsdRAAk3GvFcY4wKs3eZVmf9GV2rpTLtMDaWeIiG586r6tft1ksE540q4M46hF
+gSo7ble7XARTRxWPsRhmD9iLW/nFPaU6RVpNGAvscnfpDqYs+Cis2Mttw5ZHGK0Z
+uSAUkINdG4gUMlY2duEvO7LATOemCODVxTRpYux8qSEYU6W6AMkSMIfYVipau4ww
+iddzAlvL1JeutLiby31u02+Sata9tAcKoYjoAsR4bSpAl8GwcRmjRw/qnMvaiADE
+APKZHzgh5gv/QLKp3d6mx5KvmJbn9ThXqryRxINKwXiHUcu6dgFmb/B1HsdK1+qQ
+lwUBR+gy8OktreeiYPqClUw8E191pZHtdlxRpQEn9rTw0SRsaDL5w8KGk9gzQhrH
+wurP88H6+i8yL+xW7RdxzOMqfkhGCU5/bPyrjgBzbzt1sYEJLSFVR8h1DjgsmAei
+o7/P7VUoMWTGSH0WlKjCTl8Vpy/DWqEH4m+ZfYl8wT+gdDW4Diiv93VqyVy02r9e
+R1Vwf6kxsjK79lrnsDt2822X6U4QdNmvrjzfZKGKvO5MwtTD6COBewUktaFqAvTS
+M8apgJZU5hYN8ZwUJeabYKpF7OffFgzxfPdTHhrU8/HJFuHLvHbiRO15E8QQWTha
+2ZbAz8GnwCMDdx0lRzCb15poj7t8NDWSdrct7yPVxIWGsQxWlqI=
+=jneW
+-----END PGP SIGNATURE-----

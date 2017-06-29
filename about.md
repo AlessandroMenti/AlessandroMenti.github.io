@@ -31,9 +31,12 @@ You can contact me per e-mail at the following address (obfuscated to avoid spam
 
 (Please use an appropriate e-mail subject and avoid sending big attachments without prior notice).
 
+<h2>GPG</h2>
 I *strongly recommend* using encrypted e-mail for privacy: [you can find my GPG key here](/downloads/pubkey-0xBF334213F5C5CA03.asc) or get it from all major key servers, e.g. [the SKS keyservers pool](https://sks-keyservers.net/pks/lookup?op=get&search=0xBF334213F5C5CA03). Its key ID is `0xBF334213F5C5CA03` and its fingerprint is <code>6731 DDC2 8357 BEC3 8E34  2AAF BF33 4213 F5C5 CA03</code>.
 
 Note that my old key, `0x8CEFF2C1E97587C2`, was [retired on January 28<sup>th</sup>, 2017](/blog/2017/01/transitioning-new-gpg-keypair.html) (see [the transition statement](/downloads/key-transition-2017-01-26.txt)).
+
+I am open to signing GPG keys under [my certification policy](/downloads/key-signing-policy-v1.0.txt).
 
 <h3>Comments on blog posts</h3>
 *This site does not have commenting functionality built in*. This stems mainly from my decision &mdash; matured after several years &mdash; to abandon <abbr title="Content Management System">CMS</abbr>s and switch to a [static page generator](https://jekyllrb.com/) for all the right reasons:
