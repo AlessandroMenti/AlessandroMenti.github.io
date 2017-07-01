@@ -7,7 +7,7 @@ This policy is signed using GPG. To verify its authenticity, run the following
 commands:
 
     $ gpg --recv-keys 0xBF334213F5C5CA03
-    $ curl https://www.alessandromenti.it/downloads/key-signing-policy-v1.0 | gpg --verify -
+    $ curl https://www.alessandromenti.it/downloads/key-signing-policy-v1.0.txt | gpg --verify -
 
 0.0 Preamble
 - ------------
@@ -117,6 +117,7 @@ I reserve the right to not sign a key at my own discretion.
 Changelog
 - ---------
 29 June 2017, version 1.0: initial version
+    (updated 01 July 2017 to fix a typo in the policy URL at the top)
 
 Copyright and licensing
 - -----------------------
@@ -130,17 +131,17 @@ This policy was inspired by David Kaiser's PGP keysigning policy
 from Ewald Tienkamp's policy <http://ewald.tienkamp.nl/>.
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCgAdFiEEuvIKI1g8hJsDTdSERnrAtNam8zYFAllVbjAACgkQRnrAtNam
-8zZsdRAAk3GvFcY4wKs3eZVmf9GV2rpTLtMDaWeIiG586r6tft1ksE540q4M46hF
-gSo7ble7XARTRxWPsRhmD9iLW/nFPaU6RVpNGAvscnfpDqYs+Cis2Mttw5ZHGK0Z
-uSAUkINdG4gUMlY2duEvO7LATOemCODVxTRpYux8qSEYU6W6AMkSMIfYVipau4ww
-iddzAlvL1JeutLiby31u02+Sata9tAcKoYjoAsR4bSpAl8GwcRmjRw/qnMvaiADE
-APKZHzgh5gv/QLKp3d6mx5KvmJbn9ThXqryRxINKwXiHUcu6dgFmb/B1HsdK1+qQ
-lwUBR+gy8OktreeiYPqClUw8E191pZHtdlxRpQEn9rTw0SRsaDL5w8KGk9gzQhrH
-wurP88H6+i8yL+xW7RdxzOMqfkhGCU5/bPyrjgBzbzt1sYEJLSFVR8h1DjgsmAei
-o7/P7VUoMWTGSH0WlKjCTl8Vpy/DWqEH4m+ZfYl8wT+gdDW4Diiv93VqyVy02r9e
-R1Vwf6kxsjK79lrnsDt2822X6U4QdNmvrjzfZKGKvO5MwtTD6COBewUktaFqAvTS
-M8apgJZU5hYN8ZwUJeabYKpF7OffFgzxfPdTHhrU8/HJFuHLvHbiRO15E8QQWTha
-2ZbAz8GnwCMDdx0lRzCb15poj7t8NDWSdrct7yPVxIWGsQxWlqI=
-=jneW
+iQIzBAEBCgAdFiEEuvIKI1g8hJsDTdSERnrAtNam8zYFAllXRzQACgkQRnrAtNam
+8zYoyg/8CBfYRoz2A/vINdM/5KSKFiJ6HLwdd3s1L1z09+8D0j/17s4vQlV+WLV4
+jMoaYu+YnPhaTenBYECST2ppKG2v3x/BNBUXfdnFLRxFjUGc8jg/iNEXda6b1+H1
+lsDmGtlHOH2v6ls4sF4IOf17VEXFZfFFM/bXbKFOWDtrUoSZsNjLouGbQCkgT4rV
+G234TABldqv3cBMtP7eDGLlnbnPgOlfJrQfonv0oKm9M6MoH+0Gr+dyavJ8nqvNn
+5AAHstG2l1jzru/xhb2k68+3oD8gCPAhMl3uWADfncfQFFzo+fwEMk1IRSr1YCY4
+ZWhrSHbQxMcHTENqpXuA/0j4ykh57h58Y5ZQAso1vfSJmn8x/suL3ScAN7d2Xas1
+PvFUDyJ/cl/y3qOl4clQjHbIuonZMBp9H+mhDlEcViI6Wwni4/iwrb3AcoLG6ia1
+sTFuJu9Y5w6TalVMivBLyKaWR4dd1VgwCUNWp8Ac86RBPyyGIqm8ZfNdgfv+4UgZ
+X9ePRPuw3/EGsQAY9ykAYDwYgFHwL0QwjfwVa1r5hAqnKhyHoTLJCr8zw+47sdUN
+8tov9VGBERG8sqIx9QDfMmOkt7BV3LREEv66xl0rGOVdBvkUt29BOewAwEOmLHNM
+GJv9LaIZfgxa3/PEFCjfKLMotUIcbYRevG7ZY205ae+DcjR8u0I=
+=f0YR
 -----END PGP SIGNATURE-----
