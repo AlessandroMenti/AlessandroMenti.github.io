@@ -20,11 +20,13 @@ author:
 # Build settings
 markdown: kramdown
 theme: minima
-gems:
+plugins:
   - jekyll-feed
 exclude:
+  - .bundle
   - Gemfile
   - Gemfile.lock
+  - vendor
 sass:
   sass_dir: _sass
   style: compressed
