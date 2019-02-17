@@ -178,42 +178,11 @@
 
 /* Own styles. */
 body {
-    padding-top: 88px;
     font-family: "Utopia", serif !important;
 }
 
 code, kbd, pre, samp {
     font-family: "Oxygen Mono", monospace !important;
-}
-
-/* Navbar styles. */
-#sitelogo {
-    float: left !important;
-    margin-right: 1em;
-    padding-top: 2px;
-}
-
-.navbar {
-    min-height: 68px !important;
-}
-
-.navbar-brand {
-    height: 68px;
-    padding-top: 24px;
-    padding-bottom: 24px;
-}
-
-.navbar-nav {
-    margin-top: 0px !important;
-    margin-bottom: 0px !important;
-    @media (min-width: 768px) {
-        > li {
-            > a {
-                padding-top: 24px;
-                padding-bottom: 24px;
-            }
-        }
-    }
 }
 
 /* Footer styles. */
@@ -224,17 +193,10 @@ code, kbd, pre, samp {
 
 /* Social media/collaboration accounts. */
 .accsprite {
-    background: url("/images/accounts.png") no-repeat top left;
-    padding-left: 20px;
-}
-.accsprite-github {
-    background-position: 0 0;
-}
-.accsprite-twitter {
-    background-position: 0 -16px;
-}
-.accsprite-linkedin {
-    background-position: 0 -32px;
+    display: inline-block;
+    vertical-align: middle;
+    height: 20px;
+    width: 20px;
 }
 
 /* Post header. */
