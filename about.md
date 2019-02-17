@@ -19,11 +19,15 @@ I have contributed (in whole or in part) to Italian translations for several sof
 * [Amaze File Manager](https://github.com/arpitkh96/AmazeFileManager), an Android file manager app
 * [BootRacer](http://www.greatis.com/bootracer/), a utility for measuring the boot time of a PC
 * [ChompSMS](http://www.chompsms.com/), an Android messaging app
+* The [Git version control system](https://www.git-scm.com/)
 * [GreaseMonkey](http://www.greasespot.net/), the popular user script engine for the Mozilla Firefox browser
+* [Jenkins](https://jenkins.io/)
 * [Links](http://links.twibright.com/), a textual Web browser *(the updated translation was sent to the software developers; I'm waiting for it to be applied)*
+* The [Mozilla policy templates](https://github.com/mozilla/policy-templates)
 * [ReText](https://github.com/retext-project/retext), a Markdown/reStructuredText editor
 * [Review Board](https://www.reviewboard.org/), a Web-based code review tool
 * [Steam](https://store.steampowered.com/)
+* [TbSync](https://github.com/jobisoft/TbSync), a cloud synchronization tool for Mozilla Thunderbird
 * [The Bug Genie](http://www.thebuggenie.com/), a bug tracking system
 
 <h2>Contact me</h2>
