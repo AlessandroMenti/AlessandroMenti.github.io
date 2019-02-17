@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About me
+description: A short description about who I am and what I do.
 permalink: /about/
 ---
 I earned my MSc degree in [Engineering and Computer Science](http://www.di.univr.it/) from the [University of Verona](http://www.univr.it/) (Italy).

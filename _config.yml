@@ -9,6 +9,12 @@ github:
   username: AlessandroMenti
 linkedin:
   username: AlessandroMenti
+social:
+  name: Alessandro Menti
+  links:
+  - https://github.com/AlessandroMenti
+  - https://twitter.com/AlessMenti
+  - https://www.linkedin.com/in/AlessandroMenti
 
 timezone: Europe/Rome
 permalink: /blog/:year/:month/:title.html

@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Academia
+description: A brief description of my main academic interests.
 permalink: /academia/
 ---
 My main academic interests line in the areas of *computer security* and *formal methods*. I have also collaborated with [prof.&nbsp;Gianluigi Bellin](http://profs.sci.univr.it/~bellin/) in the areas of *theoretical computer science* and *logic for pragmatics*.
