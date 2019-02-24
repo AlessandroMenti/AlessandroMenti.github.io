@@ -5,6 +5,9 @@
 
 @import "bootstrap-theme";
 
+@import "fontawesome/fontawesome";
+@import "fontawesome/solid";
+
 /* Utopia and Oxygen Mono fonts */
 @font-face {
     font-family: "Utopia";
@@ -211,4 +214,21 @@ code, kbd, pre, samp {
     > li {
         margin-bottom: 30px;
     }
+}
+
+/* Accordion status. */
+.accordion .card-header .btn-link:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f078\00a0";
+    float: left;
+    vertical-align: middle;
+}
+.accordion .card-header .btn-link.collapsed:before {
+    content: "\f054\00a0";
+}
+
+/* Category badge. */
+.category-badge-link {
+    font-size: 50%;
+    vertical-align: middle;
 }

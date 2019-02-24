@@ -2,6 +2,7 @@
 layout: post
 title: Transitioning to a new GPG keypair
 description: A brief guide to generate a new secure GPG keypair.
+categories: [gpg]
 date: 2017-01-26 20:46:00 +0100
 ---
 Since my old GPG keypair had a few UIDs I don't employ any more and did not

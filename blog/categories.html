@@ -1,0 +1,40 @@
+---
+layout: default
+title: Blog archive (by category)
+---
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <header class="post-header">
+        <h1 class="post-title">All blog posts <span class="small text-muted">(<a href="{{ site.baseurl }}/blog/">by date</a> <span aria-hidden="true">·</span> by category)</span></h1>
+      </header>
+      <div class="accordion" id="categoryAccordion">
+      {% for category in site.categories %}
+        <a name="{{ category[0] }}"></a>
+        <div class="card">
+          <div class="card-header collapsed" id="heading{{ category[0] }}">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse{{ category[0] }}" aria-expanded="false" aria-controls="collapse{{ category[0] }}">
+                {{ category[0] }}
+              </button>
+            </h5>
+          </div>
+          <div id="collapse{{ category[0] }}" class="collapse" aria-labelledby="heading{{ category[0] }}" data-parent="#categoryAccordion">
+            <div class="card-body">
+              <ul class="posts list-unstyled">
+              {% for post in category[1] %}
+                <li>
+                  <h2><small class="post-date">{{ post.date | date: "%b %-d, %Y" }}</small><br>
+                  <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+                  {{ post.excerpt | remove: '</p>' }} <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">Read more<span aria-hidden="true">&nbsp;→</span></a></p>
+                </li>
+              {% endfor %}
+              </ul>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

@@ -8,7 +8,8 @@ layout: default
       <article class="post-content">
         <header class="post-header">
           <h1 class="post-title" itemprop="name"><small class="post-date"><time itemprop="datePublished" datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: "%b %-d, %Y" }}</time></small><br>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ page.title }}</a></h1>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ page.title }}</a>
+          {% if page.categories %}{% for category in page.categories %}<a href="{{ site.baseurl }}/blog/categories#{{ category }}" class="category-badge-link"><span class="badge badge-secondary"><i class="fas fa-sitemap"></i>&nbsp;{{ category }}</span></a>{% endfor %}{% endif %}</h1>
         </header>
         {{ content }}
       </article>
