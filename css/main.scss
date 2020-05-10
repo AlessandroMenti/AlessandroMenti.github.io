@@ -13,6 +13,7 @@
     font-family: "Utopia";
     font-style: normal;
     font-weight: normal;
+    font-display: swap;
     src: local(Utopia), url("/fonts/utopia-regular-latin.woff2") format(woff2), url("/fonts/utopia-regular-latin.woff") format(woff), url("/fonts/utopia-regular-latin.ttf") format(ttf), url("/fonts/utopia-regular-latin.eot") format(eot);
 }
 
@@ -20,6 +21,7 @@
     font-family: "Utopia";
     font-style: italic;
     font-weight: normal;
+    font-display: swap;
     src: local(Utopia Italic), url("/fonts/utopia-italic-latin.woff2") format(woff2), url("/fonts/utopia-italic-latin.woff") format(woff), url("/fonts/utopia-italic-latin.ttf") format(ttf), url("/fonts/utopia-italic-latin.eot") format(eot);
 }
 
@@ -27,6 +29,7 @@
     font-family: "Utopia";
     font-style: normal;
     font-weight: bold;
+    font-display: swap;
     src: local(Utopia Bold), url("/fonts/utopia-bold-latin.woff2") format(woff2), url("/fonts/utopia-bold-latin.woff") format(woff), url("/fonts/utopia-bold-latin.ttf") format(ttf), url("/fonts/utopia-bold-latin.eot") format(eot);
 }
 
@@ -34,6 +37,7 @@
     font-family: "Utopia";
     font-style: italic;
     font-weight: bold;
+    font-display: swap;
     src: local(Utopia Bold Italic), url("/fonts/utopia-bold-italic-latin.woff2") format(woff2), url("/fonts/utopia-bold-italic-latin.woff") format(woff), url("/fonts/utopia-bold-italic-latin.ttf") format(ttf), url("/fonts/utopia-bold-italic-latin.eot") format(eot);
 }
 
@@ -41,6 +45,7 @@
     font-family: "Oxygen Mono";
     font-style: normal;
     font-weight: normal;
+    font-display: swap;
     src: local(Oxygen Mono), url("/fonts/oxygen-mono-regular-latin.woff2") format(woff2), url("/fonts/oxygen-mono-regular-latin.woff") format(woff), url("/fonts/oxygen-mono-regular-latin.ttf") format(ttf), url("/fonts/oxygen-mono-regular-latin.eot") format(eot);
 }
 
